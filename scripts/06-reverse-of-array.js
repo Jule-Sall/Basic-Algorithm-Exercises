@@ -3,15 +3,9 @@ function reverseArray(){
 
     const inputString = document.getElementById('arrayInput').value;
     
-    let inputArray = inputString.split("");
-    inputArray = inputArray.filter(el=>{
-        if(el === ' ' || el === ','){
-            return false;
-        }
-        else{
-            return true;
-        }
-    });
+    // split the input string by commas and convert to numbers
+    let inputArray = inputString.split(',').map(Number);
+
     const lastPos = inputArray.length - 1;
     for(let currentPos = 0; currentPos < inputArray.length / 2; currentPos++){
         const temp = inputArray[currentPos];
