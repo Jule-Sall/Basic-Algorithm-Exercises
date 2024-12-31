@@ -1,10 +1,11 @@
 function findLargest(){
     // inputs
-    const num1 = document.getElementById('num1').value;
-    const num2 = document.getElementById('num2').value;
-    const num3 = document.getElementById('num3').value;
+    const num1 = Number(document.getElementById('num1').value);
+    const num2 = Number(document.getElementById('num2').value);
+    const num3 = Number(document.getElementById('num3').value);
 
 
+    console.log(typeof num1);
     // make an array of the inputs
     const numbers = [num1, num2, num3];
 
